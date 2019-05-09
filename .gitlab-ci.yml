@@ -1,0 +1,22 @@
+stages:
+  - test
+  - staging
+  - deploy
+
+test:
+  stage: test
+  script: echo "Running tests"
+
+staging:
+  stage: staging
+  script: echo "Running staging server"
+
+deploy:
+  stage: deploy
+  script:
+    - echo "Running deploy server"
+  environment:
+    name: staging
+    url: https://rootandleaves.com
+  only:
+  - master

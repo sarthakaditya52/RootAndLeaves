@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="990678f7-e3a7-40cf-a3fc-1b6eb47a2dbe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pages/faq.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/config.gypi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/firebase.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/common/src/assets/css/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/common/src/assets/css/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/common/src/components/ScrollSpyMenu/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/common/src/components/ScrollSpyMenu/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/common/src/containers/App/PartnerHistory/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/common/src/containers/App/PartnerHistory/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/common/src/data/App/MenuItems/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/common/src/data/App/MenuItems/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_document.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_document.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/flaticon.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/icon-example-page.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/Flaticon.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/Flaticon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/Flaticon.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/Flaticon.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/Flaticon.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/agency/agency-banner.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/agency/blog/blog-img1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/agency/blog/blog-img2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/agency/blog/blog-img3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/agency/client/denny.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/agency/client/menny.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/agency/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/agency/footer-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/agency/google-icon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/agency/group/group-image1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/agency/group/group-image2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/agency/group/group-image3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/agency/login-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/agency/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/agency/logo@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/agency/particles/particle-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/agency/particles/particle-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/agency/particles/particle-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/agency/particles/particle-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/agency/particles/particle-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/agency/preview-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/agency/surface-studio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/agency/team/member-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/agency/team/member-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/agency/team/member-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/4.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/5.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/6.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/Feature-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/Feature-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/Feature-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/Feature-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/Feature-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/Feature-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/apple.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/credit-card.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/credit-card.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/dribbble.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/google-icon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/google.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/img-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/img-1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/img-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/img-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/img-3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/img-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/img-4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/img-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/img-5.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/img-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/img-6.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/img-7.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/img-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/info1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/info1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/info2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/info2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/iphone-mockup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/iphone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/left-arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/login-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/mail.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/mailchimp.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/man.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/man.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/mobile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/mobile.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/mockup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/mockup.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/next.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/partner-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/pattern.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/right-arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/slide-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/slide-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/slide-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/slide-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/slide-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/substract-hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/substract.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/testi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/testi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/app/thumb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>PaymentSection</find>
+      <find>#</find>
+      <find>drawerClose</find>
+      <find>domain</find>
+      <find>home</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>abcd</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/packages/common/src/data/App/FeatureSection/index.js" />
+        <option value="$PROJECT_DIR$/packages/common/src/data/App/FeatureSliderTwo/index.js" />
+        <option value="$PROJECT_DIR$/packages/common/src/data/App/TestimonialSlider/index.js" />
+        <option value="$PROJECT_DIR$/packages/common/src/containers/App/Control/index.js" />
+        <option value="$PROJECT_DIR$/packages/common/src/containers/App/FeatureSection/index.js" />
+        <option value="$PROJECT_DIR$/packages/common/src/containers/App/FeatureSlider/index.js" />
+        <option value="$PROJECT_DIR$/packages/common/src/containers/App/FeatureSliderTwo/index.js" />
+        <option value="$PROJECT_DIR$/packages/common/src/containers/App/PartnerHistory/index.js" />
+        <option value="$PROJECT_DIR$/packages/common/src/containers/App/PaymentSection/index.js" />
+        <option value="$PROJECT_DIR$/packages/common/src/containers/App/sliderDescription/index.js" />
+        <option value="$PROJECT_DIR$/packages/common/src/containers/App/Testimonial/index.js" />
+        <option value="$PROJECT_DIR$/pages/FAQ.js" />
+        <option value="$PROJECT_DIR$/packages/common/src/containers/App/Banner/index.js" />
+        <option value="$PROJECT_DIR$/packages/common/src/assets/css/style.js" />
+        <option value="$PROJECT_DIR$/packages/common/src/containers/App/Navbar/index.js" />
+        <option value="$PROJECT_DIR$/pages/_document.js" />
+        <option value="$PROJECT_DIR$/packages/common/src/components/ScrollSpyMenu/index.js" />
+        <option value="$PROJECT_DIR$/packages/common/src/data/App/MenuItems/index.js" />
+        <option value="$PROJECT_DIR$/pages/home.js" />
+        <option value="$PROJECT_DIR$/pages/faq.js" />
+        <option value="$PROJECT_DIR$/pages/index.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/rootandleaves_o.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="rootandleaves" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rootandleaves" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="990678f7-e3a7-40cf-a3fc-1b6eb47a2dbe" name="Default Changelist" comment="" />
+      <created>1557409010073</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1557409010073</updated>
+      <workItem from="1557409014906" duration="14176000" />
+      <workItem from="1557426943325" duration="212000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="14388000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25239617" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32970297" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946752" visible="true" weight="0.32970297" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5005325" side_tool="true" weight="0.32970297" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32970297" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/packages/common/src/containers/App/FeatureSection/featureSection.style.js" />
+    <entry file="file://$PROJECT_DIR$/packages/common/src/data/App/FeatureSection/index.js" />
+    <entry file="file://$PROJECT_DIR$/packages/common/src/data/App/FeatureSliderTwo/index.js" />
+    <entry file="file://$PROJECT_DIR$/packages/common/src/data/App/TestimonialSlider/index.js" />
+    <entry file="file://$PROJECT_DIR$/packages/common/src/contexts/DrawerContext.js" />
+    <entry file="file://$PROJECT_DIR$/packages/common/src/theme/index.js" />
+    <entry file="file://$PROJECT_DIR$/packages/common/src/containers/App/Control/index.js" />
+    <entry file="file://$PROJECT_DIR$/packages/common/src/containers/App/FeatureSlider/index.js" />
+    <entry file="file://$PROJECT_DIR$/packages/common/src/containers/App/FeatureSection/index.js" />
+    <entry file="file://$PROJECT_DIR$/packages/common/src/containers/App/FeatureSliderTwo/index.js" />
+    <entry file="file://$PROJECT_DIR$/packages/common/src/containers/App/Footer/index.js" />
+    <entry file="file://$PROJECT_DIR$/packages/common/src/containers/App/LoginModal/index.js" />
+    <entry file="file://$PROJECT_DIR$/packages/common/src/containers/App/PartnerHistory/index.js" />
+    <entry file="file://$PROJECT_DIR$/packages/common/src/containers/App/PaymentSection/index.js" />
+    <entry file="file://$PROJECT_DIR$/packages/common/src/containers/App/SearchPanel/index.js" />
+    <entry file="file://$PROJECT_DIR$/packages/common/src/containers/App/sliderDescription/index.js" />
+    <entry file="file://$PROJECT_DIR$/packages/common/src/containers/App/Testimonial/index.js" />
+    <entry file="file://$PROJECT_DIR$/packages/reusecore/src/elements/Navbar/index.js" />
+    <entry file="file://$PROJECT_DIR$/pages/_app.js" />
+    <entry file="file://$PROJECT_DIR$/packages/common/src/containers/App/Banner/index.js" />
+    <entry file="file://$PROJECT_DIR$/packages/common/src/components/HamburgMenu/hamburgMenu.style.js" />
+    <entry file="file://$PROJECT_DIR$/packages/common/src/components/Dropdown/index.js" />
+    <entry file="file://$PROJECT_DIR$/packages/reusecore/src/elements/Drawer/index.js" />
+    <entry file="file://$PROJECT_DIR$/packages/common/src/components/HamburgMenu/index.js" />
+    <entry file="file://$PROJECT_DIR$/packages/common/src/assets/css/style.js" />
+    <entry file="file://$PROJECT_DIR$/.next/static/webpack/static/development/pages/home.js.eb5d8aa6e0877edb7783.hot-update.js" />
+    <entry file="file://$PROJECT_DIR$/pages/_document.js" />
+    <entry file="file://$PROJECT_DIR$/packages/common/src/containers/App/Navbar/index.js" />
+    <entry file="file://$PROJECT_DIR$/packages/common/src/components/ScrollSpyMenu/index.js" />
+    <entry file="file://$PROJECT_DIR$/packages/common/src/data/App/MenuItems/index.js" />
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-845" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/home.js" />
+    <entry file="file://$PROJECT_DIR$/pages/faq.js" />
+    <entry file="file://$PROJECT_DIR$/pages/index.js" />
+  </component>
+</project>

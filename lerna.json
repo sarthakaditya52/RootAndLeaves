@@ -1,0 +1,10 @@
+{
+  "packages": [
+    "packages/common",
+    "packages/landing",
+    "packages/reusecore"
+  ],
+  "version": "independent",
+  "npmClient": "npm",
+  "useWorkspaces": true
+}

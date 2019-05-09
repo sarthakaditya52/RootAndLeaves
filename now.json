@@ -1,0 +1,10 @@
+{
+  "alias": ["www.rootandleaves.com", "http://rootandleaves.com", "rootandleaves.com"],
+  "name": "OfficialWebsite",
+  "version": 2,
+  "public": true,
+  "builds": [{ "src": "next.config.js", "use": "@now/next" }],
+  "routes": [
+    { "src": "_next/static/(?:[^/]+/pages|chunks|runtime)/.+", "headers": { "cache-control": "immutable" } }
+  ]
+}
