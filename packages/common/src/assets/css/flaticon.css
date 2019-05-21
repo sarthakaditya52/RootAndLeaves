@@ -28,6 +28,7 @@
 [class*=' flaticon-']:after {
   font-family: Flaticon;
   font-style: normal;
+  color: #000;
 }
 
 .flaticon-flask:before {

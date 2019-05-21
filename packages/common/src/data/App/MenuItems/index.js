@@ -1,77 +1,45 @@
-const data = {/*
+const data = {
   menuItems: [
     {
-      label: 'Our Services',
-      path: '#services',
-      offset: '100',
+      label: 'Home',
+      path: '/',
     },
     {
-      label: 'Control Remotely',
-      path: '#control',
-      offset: '100',
+      label: 'Products',
+      path: '/home',
     },
     {
-      label: 'Key Features',
-      path: '#keyfeature',
-      offset: '0',
+      label: 'FAQ',
+      path: '/faq',
     },
     {
-      label: 'Partners',
-      path: '#partners',
-      offset: '-100',
+      label: 'About Us',
+      path: '/about',
     },
     {
-      label: 'Payments',
-      path: '#payments',
-      offset: '100',
+      label: 'Copyright',
+      path: '/home',
     },
     {
-      label: 'Testimonial',
-      path: '#testimonialSection',
-      offset: '100',
+      label: 'Popular Campaign',
+      path: '/popc',
+    },
+    {
+      label: 'Our Information',
+      path: '/home',
+    },
+    {
+      label: 'Policy',
+      path: '/home',
+    },
+    {
+      label: 'Blog',
+      path: '/home',
+    },
+    {
+      label: 'Career',
+      path: '/home',
     },
   ],
-*/   menuItems: [
-      {
-        label: 'Home',
-        path: '/home',
-      },
-      {
-        label: 'Products',
-        path: '/home',
-      },
-      {
-        label: 'FAQ',
-        path: '/faq',
-      },
-      {
-        label: 'About Us',
-        path: '/',
-      },
-      {
-        label: 'Copyright',
-        path: '/home',
-      },
-      {
-        label: 'Popular Campaign',
-        path: '/home',
-      },
-      {
-        label: 'Our Information',
-        path: '/home',
-      },
-      {
-        label: 'Policy',
-        path: '/home',
-      },
-      {
-        label: 'Blog',
-        path: '/home',
-      },
-      {
-        label: 'Career',
-        path: '/home',
-      },
-    ],
 };
 export default data;

@@ -88,7 +88,7 @@ export const ResetCSS = createGlobalStyle`
   
   .pageclass{
     margin-right:20%;
-    margin-left:20%;
+    margin-left:23%;
   
   }
 

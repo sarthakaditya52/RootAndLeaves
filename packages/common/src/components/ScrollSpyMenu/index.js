@@ -2,9 +2,12 @@ import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import Scrollspy from 'react-scrollspy';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-import { DrawerContext }from '../../contexts/DrawerContext';
+import { DrawerContext } from '../../contexts/DrawerContext';
+import DropdownMenu from '../Dropdown';
+import data from '../../data/App/DropDown';
+import { AppWrapper } from '../../containers/App/app.style';
 
 const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
   const { dispatch } = useContext(DrawerContext);
@@ -40,17 +43,22 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
     >
       {menuItems.map((menu, index) => (
         <li key={`menu-item-${index}`}>
-          {drawerClose ? (
-            <Link
-              to={menu.path}
-              onClick={toggleDrawer}
-            >
+          {index == 1 ? (
+            drawerClose ? (
+              <DropdownMenu
+                content={menu.label}
+                dropdownItems={data.dropdownItems}
+                dropdownDirection={'left'}
+              />
+            ) : (
+              <Link to={menu.path}>{menu.label}</Link>
+            )
+          ) : drawerClose ? (
+            <Link to={menu.path} onClick={toggleDrawer}>
               {menu.label}
             </Link>
           ) : (
-            <Link to={menu.path}>
-              {menu.label}
-            </Link>
+            <Link to={menu.path}>{menu.label}</Link>
           )}
         </li>
       ))}

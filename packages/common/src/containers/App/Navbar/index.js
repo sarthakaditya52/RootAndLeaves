@@ -52,7 +52,7 @@ const Navbar = ({ navbarStyle, logoStyle, buttonStyle }) => {
       component: SearchPanel,
       componentProps: {},
       closeComponent: CloseModalButtonAlt,
-      closeOnClickOutside: false,
+      closeOnClickOutside: true,
     });
   };
   // Authentication modal handler
@@ -71,7 +71,7 @@ const Navbar = ({ navbarStyle, logoStyle, buttonStyle }) => {
       component: LoginModal,
       componentProps: {},
       closeComponent: CloseModalButton,
-      closeOnClickOutside: false,
+      closeOnClickOutside: true,
     });
   };
   // Toggle drawer

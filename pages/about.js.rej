@@ -1,0 +1,61 @@
+diff a/pages/about.js b/pages/about.js	(rejected hunks)
+@@ -7,2 +7,2 @@ import buttonw from 'common/src/assets/image/about/4.png';
+-import Button from "reusecore/src/elements/Button";
+-import './about.style.css'
++import Button from 'reusecore/src/elements/Button';
++import './about.style.css';
+@@ -10,26 +10,13 @@ import './about.style.css'
+-class About extends Component{
+-    render() {
+-        return (
+-            <div className="container">
+-                <div className="btn">
+-                    <Button
+-                        icon={<Image src={buttonw} alt={"white"}/>}
+-                    />
+-                    <Button
+-                        icon={<Image src={buttong} alt={"green"}/>}
+-                    />
+-                </div>
+-                <div className="imgs">
+-                    <div className="container_I">
+-                        <Image src={blueImg} alt={"Blue"} className="image_l"/>
+-                        <div className="middle">
+-                            <div className="text">John Doe_L</div>
+-                        </div>
+-                    </div>
+-                    <div className="container_I">
+-                        <Image src={purpleImg} alt={"Blue"} className="image_r"/>
+-                        <div className="middle">
+-                            <div className="text">John Doe_R</div>
+-                        </div>
+-                    </div>
+-                </div>
++class About extends Component {
++  render() {
++    return (
++      <div className="container">
++        <div className="btn">
++          <Button icon={<Image src={buttonw} alt={'white'} />} />
++          <Button icon={<Image src={buttong} alt={'green'} />} />
++        </div>
++        <div className="imgs">
++          <div className="container_I">
++            <Image src={blueImg} alt={'Blue'} className="image_l" />
++            <div className="middle">
++              <div className="text">John Doe_L</div>
+@@ -37,3 +24,11 @@ class About extends Component{
+-        )
+-    }
+-
++          </div>
++          <div className="container_I">
++            <Image src={purpleImg} alt={'Blue'} className="image_r" />
++            <div className="middle">
++              <div className="text">John Doe_R</div>
++            </div>
++          </div>
++        </div>
++      </div>
++    );
++  }

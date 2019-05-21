@@ -29,7 +29,7 @@ const HamburgMenuWrapper = styled.button`
     height: 2px;
     margin: 4px 0;
     float: right;
-    background-color: ${props => (props.barColor ? props.barColor : '#10ac84')};
+    background-color: ${props => (props.barColor ? props.barColor : '#000')};
     transition: all 0.3s ease;
     &:first-child {
       margin-top: 0;
