@@ -9,7 +9,9 @@ import { appTheme } from 'common/src/theme/app';
 import {
   GlobalStyle,
   AppWrapper,
-  ConditionWrapper, BannerSquareShape, BannerCircleShape,
+  ConditionWrapper,
+  BannerSquareShape,
+  BannerCircleShape,
 } from 'common/src/containers/App/app.style';
 import { ResetCSS } from 'common/src/assets/css/style';
 import Navbar from 'common/src/containers/App/Navbar';
@@ -23,14 +25,13 @@ import Footer from 'common/src/containers/App/Footer';
 import FeatureSlider from 'common/src/containers/App/FeatureSlider';
 import FeatureSliderTwo from 'common/src/containers/App/FeatureSliderTwo';
 import { DrawerProvider } from 'common/src/contexts/DrawerContext';
-import {
-  BrowserRouter as Router,
-  Route
-} from "react-router-dom";
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import data from 'common/src/data/App/DropDown';
 
 import FAQ from './faq';
-import Box from "reusecore/src/elements/Box";
-import ParticlesComponent from "common/src/containers/App/particles";
+import About from './about';
+import PopC from './popc';
+import DropdownMenu from 'common/src/components/Dropdown';
 
 function getSize() {
   return {
@@ -60,32 +61,31 @@ function useWindowSize() {
 }
 
 export default () => {
-  const size = process.browser && useWindowSize();
   return (
-      <Router>
-        <ThemeProvider theme={appTheme}>
-          <>
-            <Head>
-              <title>App | A react next landing page</title>
-              <meta name="Description" content="React next landing page" />
-              <meta name="theme-color" content="#ec5555" />
-              <link
-                href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700"
-                rel="stylesheet"
-              />
-            </Head>
+    <Router>
+      <ThemeProvider theme={appTheme}>
+        <>
+          <Head>
+            <title>Roots And Leaves</title>
+            <meta name="Description" content="React next landing page" />
+            <meta name="theme-color" content="#ec5555" />
+            <link
+              href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700"
+              rel="stylesheet"
+            />
+          </Head>
 
-            <ResetCSS />
-            <GlobalStyle />
+          <ResetCSS />
+          <GlobalStyle />
 
-            <AppWrapper>
-              <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
-                <DrawerProvider>
-                  <Navbar />
-                </DrawerProvider>
-              </Sticky>
-              <div>
-                {/*
+          <AppWrapper>
+            <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
+              <DrawerProvider>
+                <Navbar />
+              </DrawerProvider>
+            </Sticky>
+            <div>
+              {/*
               <FeatureSection />
               <ControllSection />
               <ConditionWrapper id="keyfeature">
@@ -95,14 +95,16 @@ export default () => {
               <PaymentSection />
               <TestimonialSection />
                  */}
-              </div>
-              <Route exact path ='/' component={DomainSection}/>
-              <Route exact path ='/home' component={DomainSection}/>
-              <Route exact path ='/faq' component={FAQ}/>
-              <Footer />
-            </AppWrapper>
-          </>
-        </ThemeProvider>
-      </Router>
+            </div>
+            <Route exact path="/" component={DomainSection} />
+            <Route exact path="/home" component={DomainSection} />
+            <Route exact path="/faq" component={FAQ} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/popc" component={PopC} />
+            <Footer />
+          </AppWrapper>
+        </>
+      </ThemeProvider>
+    </Router>
   );
 };
