@@ -4,6 +4,18 @@ import {
   DropdownMenuItemsWrapper,
   DropdownMenuItemWrapper,
 } from './dropdown.style';
+import { Link } from 'react-router-dom';
+
+let astyle = {
+  border: 'solid black',
+  borderWidth: '0 1px 1px 0',
+  display: 'inline-block',
+  padding: '3px',
+  transform: 'rotate(45deg)',
+  marginLeft: '10px',
+  marginBottom: '5px',
+  //-webkit-transform: 'rotate(45deg)',
+};
 
 const DropdownMenu = props => {
   const [menuState, setMenuState] = useState({
@@ -32,7 +44,10 @@ const DropdownMenu = props => {
   const { content, dropdownItems, dropdownDirection, className } = props;
   return (
     <DropdownMenuWrapper onClick={e => e.stopPropagation()}>
-      <span onClick={handleToggle}>{content}</span>
+      <span onClick={handleToggle}>
+        {content}
+        <i style={astyle} className="arrow down" />
+      </span>
       {menuState.show && (
         <DropdownMenuItemsWrapper
           className={className}
@@ -41,7 +56,7 @@ const DropdownMenu = props => {
           {dropdownItems &&
             dropdownItems.map((item, index) => (
               <DropdownMenuItemWrapper key={index} onClick={handleToggle}>
-                {item}
+                <Link to={item.path}>{item.label}</Link>
               </DropdownMenuItemWrapper>
             ))}
         </DropdownMenuItemsWrapper>

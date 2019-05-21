@@ -3,13 +3,13 @@ import styled from 'styled-components';
 export const DropdownMenuWrapper = styled.div`
   position: relative;
   cursor: pointer;
+  font-size: 25px;
   transition: 0.2s ease-in-out;
 `;
 
 export const DropdownMenuItemsWrapper = styled.ul`
   margin-top: 40px;
   padding: 0;
-  list-style: none;
   background-color: #ffffff;
   position: absolute;
   top: 0;
