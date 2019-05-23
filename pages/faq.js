@@ -1,5 +1,5 @@
 import React from 'react';
-import 'common/src/assets/css/faq.css';
+import * as mystyles from 'common/src/assets/css/faq.css';
 import Sticky from 'react-stickynode';
 import ReactDOM from 'react-dom';
 import classnames from 'classnames';
@@ -241,7 +241,9 @@ class FAQ extends React.Component {
                   </div>
                 </div>
                 <div
-                  className="Faq-section"
+                  className={classnames('Faq-section', {
+                    'Faq-section ': this.state.Q2,
+                  })}
                   id="faq-general-inquiries-2"
                   ref="tab2"
                 >

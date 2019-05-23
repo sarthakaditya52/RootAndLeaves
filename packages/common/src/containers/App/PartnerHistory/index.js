@@ -27,11 +27,6 @@ const PartnerHistory = ({
 }) => {
   return (
     <PartnerHistoryWrapper id="partners">
-      <Image
-        src={BackgroundImg}
-        className="backgroungImg"
-        alt="backgroungImg"
-      />
       <Container>
         <Box className="row" {...row}>
           <Box className="col" {...col} style={{ flexDirection: 'column' }}>

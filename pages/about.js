@@ -1,192 +1,112 @@
-import React, { Component } from 'react';
-import $ from 'jquery';
-import blueImg from 'common/src/assets/image/about/2.png';
-import purpleImg from 'common/src/assets/image/about/1.png';
-import buttong from 'common/src/assets/image/about/3.png';
-import buttonw from 'common/src/assets/image/about/4.png';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'jquery/dist/jquery.min';
+import React from 'react';
+import Container from "common/src/components/UI/Container";
+import Box from "reusecore/src/elements/Box";
+import FeatureBlock from "common/src/components/FeatureBlock";
+import Heading from "reusecore/src/elements/Heading";
+import Text from "reusecore/src/elements/Text";
+import PropTypes from "prop-types";
+import Dia from 'common/src/assets/image/about/iconD.png'
+import Image from "reusecore/src/elements/Image";
+import OurValues from "common/src/containers/App/OurValues";
+import Team from "common/src/containers/App/Team";
 
-let style_bW = {
-  position: 'absolute',
-  top: '500px',
-  left: '0px',
-  cursor: 'pointer',
-};
-let style_c8 = {
-  position: 'relative',
-  height: '550px',
-  backgroundColor: '#f1f3f4',
+let linestyle={
+    width: '60px',
+    border: '1px solid #DC0036',
 };
 
-let style_mt = {
-  position: 'absolute',
-  right: '130px',
-  top: '170px',
-  width: '200px',
-  zIndex: '200',
-  color: 'white',
-  textAlign: 'justify',
+let DivS={
+    marginTop: '50px'
 };
 
-let style_bg = {
-  position: 'absolute',
-  top: '500px',
-  left: '60px',
-  cursor: 'pointer',
-};
-
-class About extends Component {
-  /*
-
-    }
-    function
-
-    }*/
-  constructor() {
-    super();
-    this.state = {
-      title:
-        "Many users already have downloaded Bootstrap from MaxCDN when visiting another site. As a result, it will be loaded from cache when they visit your site, which leads to faster loading time. Also, most CDN's will make sure that once a user requests a file from it",
-      style_Ib: {
-        position: 'absolute',
-        right: 0,
-        top: 0,
-        width: '80%',
-        height: '500px',
-      },
-      style_Ip: {
-        position: 'absolute',
-        right: 0,
-        top: 0,
-        width: '60%',
-        height: '500px',
-        zIndex: '100',
-      },
-    };
-  }
-
-  handleClick(x) {
-    if (x == 1) {
-      this.setState({
-        title:
-          "Many users already have downloaded Bootstrap from MaxCDN when visiting another site. As a result, it will be loaded from cache when they visit your site, which leads to faster loading time. Also, most CDN's will make sure that once a user requests a file from it",
-      });
-    }
-    if (x == 2) {
-      this.setState({
-        title:
-          'This method gradually changes the opacity, for selected elements, from visible to hidden (fading effect).',
-      });
-    }
-  }
-
-  changewidth(x) {
-    var maintext = document.getElementById('maintext');
-
-    if (x === 'purple') {
-      this.setState({
-        style_Ip: {
-          position: 'absolute',
-          right: 0,
-          top: 0,
-          height: '500px',
-          width: '75%',
-          transition: 'width 1s',
-          zIndex: '100',
-        },
-        style_Ib: {
-          position: 'absolute',
-          right: 0,
-          top: 0,
-          height: '500px',
-          width: '85%',
-          transition: 'width 1s',
-        },
-      });
-      $('#maintext').fadeOut();
-      //maintext.style.display ="none";
-      setTimeout(function() {
-        maintext.style.right = 130 + 'px';
-        $('#maintext').fadeIn();
-      }, 700);
-    }
-
-    if (x === 'blue') {
-      this.setState({
-        style_Ib: {
-          position: 'absolute',
-          right: 0,
-          top: 0,
-          height: '500px',
-          width: '100%',
-          transition: 'width 1s',
-        },
-        style_Ip: {
-          position: 'absolute',
-          right: 0,
-          top: 0,
-          height: '500px',
-          width: '55%',
-          transition: 'width 1s',
-          zIndex: '100',
-        },
-      });
-
-      $('#maintext').fadeOut();
-      //maintext.style.display ="none";
-      setTimeout(function() {
-        maintext.style.right = elem1.clientWidth - 60 + 'px';
-        $('#maintext').fadeIn();
-      }, 700);
-    }
-  }
-
-  render() {
-    return (
-      <div>
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-md-2" />
-            <div className="col-md-8" style={style_c8}>
-              <img
-                src={purpleImg}
-                style={this.state.style_Ip}
-                id="elem1"
-                ref="purple"
-                onMouseOver={e => this.changewidth('purple')}
-              />
-              <img
-                src={blueImg}
-                style={this.state.style_Ib}
-                id="elem2"
-                ref="blue"
-                onMouseOver={e => this.changewidth('blue')}
-              />
-              <p id="maintext" style={style_mt}>
-                <span>About Us</span>
-                <br />
-                <br />
-                <span ref="text1">{this.state.title}</span>
-              </p>
-              <img
-                src={buttonw}
-                style={style_bW}
-                onClick={e => this.handleClick(1)}
-              />
-              <img
-                src={buttong}
-                style={style_bg}
-                onClick={e => this.handleClick(2)}
-              />
-            </div>
-
-            <div className="col-md-2" />
-          </div>
+const About = ({
+   title,
+   description,
+   image,
+   sectionSubTitle,
+   imageArea,
+})=>{
+    return(
+        <div style={DivS}>
+            <Container>
+                <Box>
+                    <center>
+                        <FeatureBlock
+                          description={<Heading {...sectionSubTitle} />}
+                        />
+                        <hr style={linestyle}/>
+                        <FeatureBlock
+                            title={<Heading {...title} />}
+                        />
+                        <Box>
+                            <FeatureBlock
+                                description={<Text {...description} />}
+                            />
+                        </Box>
+                        <Box {...imageArea}>
+                            <Image src={Dia} alt="diamond" {...image}/>
+                        </Box>
+                    </center>
+                    <OurValues />
+                    <Team />
+                </Box>
+            </Container>
         </div>
-      </div>
     );
-  }
-}
+};
+
+About.propTypes = {
+    title: PropTypes.object,
+    description: PropTypes.object,
+    sectionSubTitle: PropTypes.object,
+};
+
+About.defaultProps = {
+    sectionSubTitle: {
+        content: 'What we Do',
+        as: 'span',
+        display: 'block',
+        fontSize: '14px',
+        letterSpacing: '0.13em',
+        fontWeight: '500',
+        color: 'black',
+        mb: '10px',
+        textAlign: ['center'],
+    },
+    imageAreaRow: {
+        flexDirection: 'row-reverse',
+    },
+    imageArea: {
+        width : '4%'
+    },
+    title: {
+        content:
+            'About Us heading',
+        fontSize:'75px',
+        fontWeight: '1000',
+        color: '#DC0036',
+        letterSpacing: '-0.01px',
+        mb: '20px',
+        textAlign: ['center'],
+        mt: '20px'
+    },
+    description: {
+        content:
+            'A mobile app landing page is important and  essential for right amount of information about your product. Start increasing your user base upon the launch of your product.' +
+            'There are so many travel bloggers out there, how do you decide who to follow? You\'re in luck! Our staff has rounded up the best of the best so you don\'t have to...\n' +
+            '\n' +
+            'As a travel blogger myself, The Social Girl Traveler, there are several travel bloggers I admire for their amazing creativity, talent, and sense of adventure',
+        fontSize: '16px',
+        color: '#343d48',
+        lineHeight: '33px',
+        mb: '10px',
+        width: '60%',
+        textAlign: 'center',
+    },
+    image: {
+        ml: '0',
+        mt: '70px',
+    },
+};
 
 export default About;

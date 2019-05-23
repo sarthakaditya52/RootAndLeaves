@@ -8,7 +8,9 @@ import Text from 'reusecore/src/elements/Text';
 import FeatureBlock from 'common/src/components/FeatureBlock';
 import Heading from 'reusecore/src/elements/Heading';
 import PropTypes from 'prop-types';
-
+let styleD={
+  marginTop:'60px'
+};
 const Popc = ({
   row,
   col,
@@ -23,7 +25,7 @@ const Popc = ({
   colI,
 }) => {
   return (
-    <div>
+    <div style={styleD}>
       <Container>
         <Box {...row}>
           <Box {...col} {...imageArea}>

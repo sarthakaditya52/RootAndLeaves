@@ -12,6 +12,7 @@ const FeatureBlock = ({
   title,
   button,
   description,
+  name,
   iconPosition,
   additionalContent,
   wrapperStyle,
@@ -48,9 +49,10 @@ const FeatureBlock = ({
     >
       {Icon}
 
-      {title || description || button ? (
+      {title || description || button || name ? (
         <Fragment>
           <ContentWrapper className="content__wrapper" {...contentStyle}>
+            {name}
             {title}
             {description}
             {button && (
@@ -77,6 +79,9 @@ FeatureBlock.propTypes = {
 
   /** description prop contain a react component. You can use our Text component from reusecore */
   description: PropTypes.element,
+
+  /** name prop contain a react component. You can use our Text component from reusecore */
+  name: PropTypes.element,
 
   /** button prop contain a react component. You can use our Button component from reusecore */
   button: PropTypes.element,

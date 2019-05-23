@@ -17,10 +17,6 @@ const data = {
       path: '/about',
     },
     {
-      label: 'Copyright',
-      path: '/home',
-    },
-    {
       label: 'Popular Campaign',
       path: '/popc',
     },
@@ -34,7 +30,7 @@ const data = {
     },
     {
       label: 'Blog',
-      path: '/home',
+      path: '/blog',
     },
     {
       label: 'Career',

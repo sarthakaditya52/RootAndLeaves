@@ -62,6 +62,7 @@ TestimonialSection.propTypes = {
 };
 
 TestimonialSection.defaultProps = {
+
   sectionWrapper: {
     as: 'section',
     pt: '0px',
