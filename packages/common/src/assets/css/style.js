@@ -85,12 +85,6 @@ export const ResetCSS = createGlobalStyle`
       }
     }
   }
-  
-  .pageclass{
-    margin-right:20%;
-    margin-left:23%;
-  
-  }
 
   button.modalCloseBtn {
     position: fixed !important;
