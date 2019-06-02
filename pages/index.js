@@ -6,10 +6,7 @@ import Head from 'next/head';
 import { ThemeProvider } from 'styled-components';
 import Sticky from 'react-stickynode';
 import { appTheme } from 'common/src/theme/app';
-import {
-  GlobalStyle,
-  AppWrapper,
-} from 'common/src/containers/App/app.style';
+import { GlobalStyle, AppWrapper } from 'common/src/containers/App/app.style';
 import { ResetCSS } from 'common/src/assets/css/style';
 import Navbar from 'common/src/containers/App/Navbar';
 import Footer from 'common/src/containers/App/Footer';
@@ -19,8 +16,10 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import FAQ from './faq';
 import About from './about';
 import PopC from './popc';
-import Blog from "./blog";
-import Home from "./home";
+import Blog from './blog';
+import Home from './home';
+import Policy from './policy';
+import Career from './career';
 
 function getSize() {
   return {
@@ -80,6 +79,8 @@ export default () => {
             <Route exact path="/about" component={About} />
             <Route exact path="/popc" component={PopC} />
             <Route exact path="/blog" component={Blog} />
+            <Route exact path="/policy" component={Policy} />
+            <Route exact path="/career" component={Career} />
             <Footer />
           </AppWrapper>
         </>

@@ -119,4 +119,103 @@ export const ResetCSS = createGlobalStyle`
       }
     }   
   }
+      
+    .test {
+      width: 100wh;
+      height: 90vh;
+      color: #fff;
+      background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+      background-size: 400% 400%;
+      -webkit-animation: Gradient 15s ease infinite;
+      -moz-animation: Gradient 15s ease infinite;
+      animation: Gradient 15s ease infinite;
+      }
+    
+    .paused {
+      -webkit-animation-play-state: paused; /* Safari 4.0 - 8.0 */
+      animation-play-state: paused;
+    }
+    
+    @-webkit-keyframes Gradient {
+      0% {
+      background-position: 0% 50%
+      }
+    50% {
+    background-position: 100% 50%
+    }
+    100% {
+    background-position: 0% 50%
+    }
+    }
+    
+    @-moz-keyframes Gradient {
+      0% {
+      background-position: 0% 50%
+      }
+    50% {
+    background-position: 100% 50%
+    }
+    100% {
+    background-position: 0% 50%
+    }
+    }
+    
+    @keyframes Gradient {
+      0% {
+      background-position: 0% 50%
+      }
+    50% {
+    background-position: 100% 50%
+    }
+    100% {
+    background-position: 0% 50%
+    }
+    }
+    
+    .note {
+  width: 500px;
+  margin: 50px auto;
+  font-size: 1.1em;
+  color: #333;
+  text-align: justify;
+}
+#drop-area {
+  border: 2px dashed #ccc;
+  border-radius: 20px;
+  width: 480px;
+  margin: 50px auto;
+  padding: 20px;
+}
+#drop-area.highlight {
+  border-color: purple;
+}
+p {
+  margin-top: 0;
+}
+.my-form {
+  margin-bottom: 10px;
+}
+#gallery {
+  margin-top: 10px;
+}
+#gallery img {
+  width: 150px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.button {
+  display: inline-block;
+  padding: 10px;
+  background: #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.button:hover {
+  background: #ddd;
+}
+#fileElem {
+  display: none;
+}
 `;

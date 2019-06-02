@@ -21,12 +21,8 @@ const data = {
       path: '/popc',
     },
     {
-      label: 'Our Information',
-      path: '/home',
-    },
-    {
       label: 'Policy',
-      path: '/home',
+      path: '/policy',
     },
     {
       label: 'Blog',
@@ -34,6 +30,10 @@ const data = {
     },
     {
       label: 'Career',
+      path: '/career',
+    },
+    {
+      label: 'Contact Us',
       path: '/home',
     },
   ],

@@ -7141,6 +7141,14 @@ form-data@^2.3.2, form-data@~2.3.2:
     combined-stream "^1.0.6"
     mime-types "^2.1.12"
 
+formBuilder@^3.2.4:
+  version "3.2.4"
+  resolved "https://registry.yarnpkg.com/formBuilder/-/formBuilder-3.2.4.tgz#03c50e162657cf11f8cd0c7ff6390bec9806a049"
+  integrity sha512-SrgynUH0p6NBgFRq/b7Hm3o00jfkXHEzOI0e8cmlKhVl7gbqzzgG2LdqDGxNcupGrKUezr6L+Ih5ZvK0/tb+yg==
+  dependencies:
+    jquery ">=3.4.1"
+    jquery-ui-sortable "*"
+
 format@^0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/format/-/format-0.2.2.tgz#d6170107e9efdc4ed30c9dc39016df942b5cb58b"
@@ -9457,7 +9465,12 @@ joi@^11.1.1:
     isemail "3.x.x"
     topo "2.x.x"
 
-jquery@^3.4.1:
+jquery-ui-sortable@*:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/jquery-ui-sortable/-/jquery-ui-sortable-1.0.0.tgz#0ee062ce02b29b36585ede3a3e0ddde666060f96"
+  integrity sha1-DuBizgKymzZYXt46Pg3d5mYGD5Y=
+
+jquery@>=3.4.1, jquery@^3.4.1:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.4.1.tgz#714f1f8d9dde4bdfa55764ba37ef214630d80ef2"
   integrity sha512-36+AdBzCL+y6qjw5Tx7HgzeGCzC81MDDgaUP8ld2zhx58HdqXGoBd+tHdrBMiyjGQs0Hxs/MLZTu/eHNJJuWPw==
