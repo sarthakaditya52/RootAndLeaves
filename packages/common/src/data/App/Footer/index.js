@@ -33,38 +33,7 @@ const data = {
     },
     {
       id: 2,
-      title: 'Our Information',
-      menuItems: [
-        {
-          id: 1,
-          url: '#',
-          text: 'Return Policy',
-        },
-        {
-          id: 2,
-          url: '#',
-          text: 'Privacy Policy',
-        },
-        {
-          id: 3,
-          url: '#',
-          text: 'Terms & Conditions',
-        },
-        {
-          id: 4,
-          url: '#',
-          text: 'Site Map',
-        },
-        {
-          id: 5,
-          url: '#',
-          text: 'Store Hours',
-        },
-      ],
-    },
-    {
-      id: 3,
-      title: 'My Account',
+      title: 'Our Services',
       menuItems: [
         {
           id: 1,
@@ -94,28 +63,23 @@ const data = {
       ],
     },
     {
-      id: 4,
-      title: 'Policy',
+      id: 3,
+      title: 'Documents',
       menuItems: [
         {
           id: 1,
           url: '#',
-          text: 'Application security',
+          text: 'Privacy Policy',
         },
         {
           id: 2,
           url: '#',
-          text: 'Software principles',
+          text: 'Terms & Conditions',
         },
         {
           id: 3,
           url: '#',
-          text: 'Unwanted software policy',
-        },
-        {
-          id: 4,
-          url: '#',
-          text: 'Responsible supply chain',
+          text: 'Site Map',
         },
       ],
     },
