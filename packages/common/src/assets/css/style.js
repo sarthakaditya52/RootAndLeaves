@@ -218,4 +218,13 @@ p {
 #fileElem {
   display: none;
 }
+input {
+\toutline: none;
+\tborder: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
 `;

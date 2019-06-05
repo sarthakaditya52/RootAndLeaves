@@ -20,6 +20,7 @@ import Blog from './blog';
 import Home from './home';
 import Policy from './policy';
 import Career from './career';
+import Contact from './contact';
 
 function getSize() {
   return {
@@ -81,6 +82,7 @@ export default () => {
             <Route exact path="/blog" component={Blog} />
             <Route exact path="/policy" component={Policy} />
             <Route exact path="/career" component={Career} />
+            <Route exact path="/contact" component={Contact} />
             <Footer />
           </AppWrapper>
         </>

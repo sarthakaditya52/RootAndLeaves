@@ -34,7 +34,7 @@ const data = {
     },
     {
       label: 'Contact Us',
-      path: '/home',
+      path: '/contact',
     },
   ],
 };
