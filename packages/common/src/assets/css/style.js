@@ -207,7 +207,6 @@ p {
 .button {
   display: inline-block;
   padding: 10px;
-  background: #ccc;
   cursor: pointer;
   border-radius: 5px;
   border: 1px solid #ccc;
@@ -226,5 +225,35 @@ input {
 textarea {
   outline: none;
   border: none;
+}
+.backbtn {
+  background: none;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: -300px;
+  margin-top: -500px;
+  cursor: pointer;
+  position: absolute;
+}
+.nxtbtn {
+  background: none;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 70%;
+  margin-top: -500px;
+  cursor: pointer;
+  position: absolute;
 }
 `;

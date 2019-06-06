@@ -188,13 +188,13 @@ class FAQ extends React.Component {
     };
   }
 
-  componentWillMount() {
+  /*componentWillMount() {
     document.body.style.backgroundColor = '#f2f3f4';
   }
 
   componentWillUnmount() {
     document.body.style.backgroundColor = null;
-  }
+  }*/
 
   funcdisp1 = () => {
     this.setState({

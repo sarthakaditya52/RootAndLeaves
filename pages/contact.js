@@ -32,6 +32,7 @@ const Contact = ({
   col,
   title,
   FormIinline,
+  description,
   Button,
   input2,
   wrapInput2,
@@ -46,7 +47,10 @@ const Contact = ({
       <Container>
         <Box {...row}>
           <Box {...col}>
-            <FeatureBlock title={<Heading {...title} />} />
+            <FeatureBlock
+              title={<Heading {...title} />}
+              description={<Text {...description} />}
+            />
             <Box {...row}>
               <i className="fa fa-map-marker fa-fw" style={istyle} />
               Address Goes Here
@@ -117,6 +121,7 @@ Contact.propTypes = {
   FormIinline: PropTypes.object,
   Button: PropTypes.object,
   input2: PropTypes.object,
+  description: PropTypes.object,
   wrapInput2: PropTypes.object,
   sectionSubTitle: PropTypes.object,
 };
@@ -187,6 +192,15 @@ Contact.defaultProps = {
     margin: '4px 2px',
     cursor: 'pointer',
     borderRadius: '40px',
+    marginLeft: '32%',
+  },
+  description: {
+    content: 'Paragraph explaining this',
+    fontSize: '16px',
+    color: '#343d48',
+    lineHeight: '33px',
+    mb: '10px',
+    ml: '25%',
   },
 };
 

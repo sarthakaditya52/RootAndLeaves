@@ -15,6 +15,16 @@ import { email } from 'react-icons-kit/ionicons/email';
 import { Icon } from 'react-icons-kit';
 import { ic_arrow_forward } from 'react-icons-kit/md/ic_arrow_forward';
 import { BannerSquareShape, BannerCircleShape } from '../app.style';
+
+import {
+  CarouselProvider,
+  Slider,
+  Slide,
+  ButtonBack,
+  ButtonNext,
+} from 'pure-react-carousel';
+import 'pure-react-carousel/dist/react-carousel.cjs.css';
+
 import BannerWrapper, {
   DiscountWrapper,
   DiscountLabel,
@@ -23,6 +33,10 @@ import BannerWrapper, {
 } from './banner.style';
 
 import AppScreenshot from '../../../assets/image/app/mobile.png';
+
+let posB = {
+  marginLeft: '0',
+};
 
 const DomainSection = ({
   SectionWrapper,
@@ -45,49 +59,63 @@ const DomainSection = ({
       <BannerSquareShape />
       <BannerCircleShape />
       <Container>
-        <Box {...row}>
-          <Box {...col}>
-            <Box>
-              <DiscountWrapper>
-                <DiscountLabel>
-                  <Text {...discountAmount} className="discountAmount" />
-                  <Text {...discountText} />
-                </DiscountLabel>
-              </DiscountWrapper>
-            </Box>
-            <FeatureBlock
-              title={<Heading {...title} />}
-              description={<Text {...description} />}
-            />
-            <EmailInputWrapper>
-              <Input
-                inputType="email"
-                placeholder="Enter Email Address"
-                iconPosition="left"
-              />
-            </EmailInputWrapper>
-            <ButtonWrapper>
-              <Link href="#services">
-                <a>
-                  <Button {...button} {...btnStyle} />
-                </a>
-              </Link>
-              <Link href="#">
-                <a>
-                  <Button
-                    {...button}
-                    {...btnStyleTwo}
-                    icon={<Icon icon={ic_arrow_forward} />}
-                    className="withoutBg"
+        <CarouselProvider
+          naturalSlideWidth={100}
+          naturalSlideHeight={80}
+          totalSlides={3}
+        >
+          <Slider>
+            <Slide index={0}>
+              <Box {...row}>
+                <Box {...col}>
+                  <Box>
+                    <DiscountWrapper>
+                      <DiscountLabel>
+                        <Text {...discountAmount} className="discountAmount" />
+                        <Text {...discountText} />
+                      </DiscountLabel>
+                    </DiscountWrapper>
+                  </Box>
+                  <FeatureBlock
+                    title={<Heading {...title} />}
+                    description={<Text {...description} />}
                   />
-                </a>
-              </Link>
-            </ButtonWrapper>
-          </Box>
-          <Box {...col} {...imageArea}>
-            <Image src={AppScreenshot} alt="Domain Image" {...image} />
-          </Box>
-        </Box>
+                  <EmailInputWrapper>
+                    <Input
+                      inputType="email"
+                      placeholder="Enter Email Address"
+                      iconPosition="left"
+                    />
+                  </EmailInputWrapper>
+                  <ButtonWrapper>
+                    <Link href="#services">
+                      <a>
+                        <Button {...button} {...btnStyle} />
+                      </a>
+                    </Link>
+                    <Link href="#">
+                      <a>
+                        <Button
+                          {...button}
+                          {...btnStyleTwo}
+                          icon={<Icon icon={ic_arrow_forward} />}
+                          className="withoutBg"
+                        />
+                      </a>
+                    </Link>
+                  </ButtonWrapper>
+                </Box>
+                <Box {...col} {...imageArea}>
+                  <Image src={AppScreenshot} alt="Domain Image" {...image} />
+                </Box>
+              </Box>
+            </Slide>
+            <Slide index={1}>I am the second Slide.</Slide>
+            <Slide index={2}>I am the third Slide.</Slide>
+          </Slider>
+          <ButtonBack className="backbtn">&lt;</ButtonBack>
+          <ButtonNext className="nxtbtn">&gt;</ButtonNext>
+        </CarouselProvider>
       </Container>
     </Box>
   );
