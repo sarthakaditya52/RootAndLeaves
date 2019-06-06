@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="990678f7-e3a7-40cf-a3fc-1b6eb47a2dbe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/common/src/assets/css/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/common/src/assets/css/style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/common/src/containers/App/Banner/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/common/src/containers/App/Banner/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/faq.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/faq.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-    </list>
+    <list default="true" id="990678f7-e3a7-40cf-a3fc-1b6eb47a2dbe" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,12 +229,12 @@
       <workItem from="1559382547882" duration="15338000" />
       <workItem from="1559746875596" duration="8609000" />
       <workItem from="1559836731035" duration="17000" />
-      <workItem from="1559836762710" duration="6811000" />
+      <workItem from="1559836762710" duration="6964000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183457000" />
+    <option name="totallyTimeSpent" value="183610000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
