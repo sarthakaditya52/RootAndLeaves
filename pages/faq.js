@@ -20,19 +20,19 @@ let curstyle = {
 let Faq_nav_item = {
   display: 'block',
   marginBottom: '2rem',
-  backgroundColor: '#E0E0E0',
+  backgroundColor: '#f2f3f4',
   width: 'fit-content',
 };
 
 let Faq_section = {
   marginBottom: '4rem',
   padding: '2rem 0',
-  backgroundColor: '#E0E0E0',
+  backgroundColor: '#f2f3f4',
   marginTop: '35px',
 };
 
 let Faq_item_itle = {
-  color: 'rebeccapurple',
+  color: 'black',
 };
 
 let check = true;
