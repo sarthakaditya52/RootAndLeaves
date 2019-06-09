@@ -11,10 +11,12 @@ class Career extends Component {
 
   componentWillMount() {
     document.body.className = this.state.animationClass;
+    document.body.id = 'ncolor';
   }
 
   componentWillUnmount() {
     document.body.className = null;
+    document.body.id = null;
   }
 
   render() {

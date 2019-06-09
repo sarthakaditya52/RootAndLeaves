@@ -20,14 +20,14 @@ let curstyle = {
 let Faq_nav_item = {
   display: 'block',
   marginBottom: '2rem',
-  backgroundColor: 'white',
+  backgroundColor: '#E0E0E0',
   width: 'fit-content',
 };
 
 let Faq_section = {
   marginBottom: '4rem',
   padding: '2rem 0',
-  backgroundColor: 'white',
+  backgroundColor: '#E0E0E0',
   marginTop: '35px',
 };
 
@@ -35,45 +35,61 @@ let Faq_item_itle = {
   color: 'rebeccapurple',
 };
 
+let check = true;
+
 class FAQs extends React.Component {
   state = { isHidden: true };
   toggleHidden = () =>
-    this.setState(prevState => ({ isHidden: !prevState.isHidden }));
+    this.setState(prevState => ({
+      isHidden: !prevState.isHidden,
+    }));
   render() {
     return (
       <div>
         <span onClick={this.toggleHidden}>
-          <strong>{this.props.question}</strong>
+          <strong>
+            <h3
+              className="Faq-item-title Toggle-trigger js-toggle-trigger"
+              style={Faq_item_itle}
+            >
+              <span>What is ZenHub?</span>
+              <svg
+                className="Faq-item-action"
+                width="20"
+                height="20"
+                viewBox="0 0 25 25"
+              >
+                <circle
+                  cx="12.5"
+                  cy="12.5"
+                  r="11.5"
+                  fill="none"
+                  stroke="#5e60ba"
+                />
+                {this.state.isHidden && (
+                  <path
+                    className="stroke--v"
+                    d="M12.5 7 L 12.5 18"
+                    fill="none"
+                    stroke="#5e60ba"
+                  />
+                )}
+                <path
+                  className="stroke--h"
+                  d="M7 12.5 L 18 12.5"
+                  fill="none"
+                  stroke="#5e60ba"
+                />
+                {console.log(check)}
+              </svg>
+            </h3>
+          </strong>
         </span>
         {!this.state.isHidden && <p>{this.props.answer}</p>}
       </div>
     );
   }
 }
-
-let ques = (
-  <h3
-    className="Faq-item-title Toggle-trigger js-toggle-trigger"
-    style={Faq_item_itle}
-  >
-    <span>What is ZenHub?</span>
-    <svg className="Faq-item-action" width="20" height="20" viewBox="0 0 25 25">
-      <circle cx="12.5" cy="12.5" r="11.5" fill="none" stroke="#5e60ba" />
-      <path
-        className="stroke--v"
-        d="M12.5 7 L 12.5 18"
-        fill="none"
-        stroke="#5e60ba"
-      />
-      <path
-        className="stroke--h"
-        d="M7 12.5 L 18 12.5"
-        fill="none"
-        stroke="#5e60ba"
-      />
-    </svg>
-  </h3>
-);
 
 let ans = (
   <div className="Faq-item-content">
@@ -100,22 +116,22 @@ let disp1 = (
     </div>
     <div className="Faq-section-content">
       <div className="Faq-item Toggle js-toggle">
-        <FAQs question={ques} answer={ans} />
+        <FAQs answer={ans} />
       </div>
       <div className="Faq-item Toggle js-toggle">
-        <FAQs question={ques} answer={ans} />
+        <FAQs answer={ans} />
       </div>
       <div className="Faq-item Toggle js-toggle">
-        <FAQs question={ques} answer={ans} />
+        <FAQs answer={ans} />
       </div>
       <div className="Faq-item Toggle js-toggle">
-        <FAQs question={ques} answer={ans} />
+        <FAQs answer={ans} />
       </div>
       <div className="Faq-item Toggle js-toggle">
-        <FAQs question={ques} answer={ans} />
+        <FAQs answer={ans} />
       </div>
       <div className="Faq-item Toggle js-toggle">
-        <FAQs question={ques} answer={ans} />
+        <FAQs answer={ans} />
       </div>
     </div>
   </div>
@@ -131,22 +147,22 @@ let disp2 = (
     </div>
     <div className="Faq-section-content">
       <div className="Faq-item Toggle js-toggle">
-        <FAQs question={ques} answer={ans} />
+        <FAQs answer={ans} />
       </div>
       <div className="Faq-item Toggle js-toggle">
-        <FAQs question={ques} answer={ans} />
+        <FAQs answer={ans} />
       </div>
       <div className="Faq-item Toggle js-toggle">
-        <FAQs question={ques} answer={ans} />
+        <FAQs answer={ans} />
       </div>
       <div className="Faq-item Toggle js-toggle">
-        <FAQs question={ques} answer={ans} />
+        <FAQs answer={ans} />
       </div>
       <div className="Faq-item Toggle js-toggle">
-        <FAQs question={ques} answer={ans} />
+        <FAQs answer={ans} />
       </div>
       <div className="Faq-item Toggle js-toggle">
-        <FAQs question={ques} answer={ans} />
+        <FAQs answer={ans} />
       </div>
     </div>
   </div>
@@ -162,16 +178,16 @@ let disp3 = (
     </div>
     <div className="Faq-section-content">
       <div className="Faq-item Toggle js-toggle">
-        <FAQs question={ques} answer={ans} />
+        <FAQs answer={ans} />
       </div>
       <div className="Faq-item Toggle js-toggle">
-        <FAQs question={ques} answer={ans} />
+        <FAQs answer={ans} />
       </div>
       <div className="Faq-item Toggle js-toggle">
-        <FAQs question={ques} answer={ans} />
+        <FAQs answer={ans} />
       </div>
       <div className="Faq-item Toggle js-toggle">
-        <FAQs question={ques} answer={ans} />
+        <FAQs answer={ans} />
       </div>
     </div>
   </div>
@@ -266,6 +282,7 @@ class FAQ extends React.Component {
                             <div className="Grid Grid--gutter-xs">
                               <div className="Grid-cell--xs-2" />
                               <div className="Grid-cell--xs-10">
+                                <i className="flaticon-annonymous" />
                                 <div className="Faq-nav-title">
                                   General inquiries
                                 </div>
@@ -290,6 +307,7 @@ class FAQ extends React.Component {
                             <div className="Grid Grid--gutter-xs">
                               <div className="Grid-cell--xs-2" />
                               <div className="Grid-cell--xs-10">
+                                <i className="flaticon-annonymous" />
                                 <div className="Faq-nav-title">
                                   General inquiries
                                 </div>
@@ -314,6 +332,7 @@ class FAQ extends React.Component {
                             <div className="Grid Grid--gutter-xs">
                               <div className="Grid-cell--xs-2" />
                               <div className="Grid-cell--xs-10">
+                                <i className="flaticon-annonymous" />
                                 <div className="Faq-nav-title">
                                   General inquiries
                                 </div>

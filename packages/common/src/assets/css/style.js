@@ -256,4 +256,7 @@ textarea {
   cursor: pointer;
   position: absolute;
 }
+.noDisplay {
+    display: none;
+}
 `;
