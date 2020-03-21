@@ -1,4 +1,5 @@
 import React from 'react';
+import Layout from './Layout';
 import FeatureSection from 'common/src/containers/App/FeatureSection';
 import Box from 'reusecore/src/elements/Box';
 import Image from 'reusecore/src/elements/Image';
@@ -8,8 +9,8 @@ import Text from 'reusecore/src/elements/Text';
 import FeatureBlock from 'common/src/components/FeatureBlock';
 import Heading from 'reusecore/src/elements/Heading';
 import PropTypes from 'prop-types';
-let styleD={
-  marginTop:'60px'
+let styleD = {
+  marginTop: '60px',
 };
 const Popc = ({
   row,
@@ -25,41 +26,45 @@ const Popc = ({
   colI,
 }) => {
   return (
-    <div style={styleD}>
-      <Container>
-        <Box {...row}>
-          <Box {...col} {...imageArea}>
-            <Image src={AppScreenshot} alt="Domain Image" {...image} />
-          </Box>
-          <Box {...col}>
-            <FeatureBlock
-              title={<Heading {...title} />}
-              description={<Text {...description} />}
-            />
-          </Box>
-        </Box>
-        <Box {...sectionHeader}>
-          <Text {...sectionSubTitle} />
-          <Heading {...sectionTitle} />
-        </Box>
-        <Box {...row}>
-          <Box {...colI}>
-            <iframe
-              width="520px"
-              height="345px"
-              src="https://www.youtube.com/embed/tgbNymZ7vqY"
-            />
-          </Box>
-          <Box {...col}>
-            <FeatureBlock
-              title={<Heading {...titleI} />}
-              description={<Text {...description} />}
-            />
-          </Box>
-        </Box>
-      </Container>
-      <FeatureSection />
-    </div>
+    <Layout
+      content={
+        <div style={styleD}>
+          <Container>
+            <Box {...row}>
+              <Box {...col} {...imageArea}>
+                <Image src={AppScreenshot} alt="Domain Image" {...image} />
+              </Box>
+              <Box {...col}>
+                <FeatureBlock
+                  title={<Heading {...title} />}
+                  description={<Text {...description} />}
+                />
+              </Box>
+            </Box>
+            <Box {...sectionHeader}>
+              <Text {...sectionSubTitle} />
+              <Heading {...sectionTitle} />
+            </Box>
+            <Box {...row}>
+              <Box {...colI}>
+                <iframe
+                  width="520px"
+                  height="345px"
+                  src="https://www.youtube.com/embed/tgbNymZ7vqY"
+                />
+              </Box>
+              <Box {...col}>
+                <FeatureBlock
+                  title={<Heading {...titleI} />}
+                  description={<Text {...description} />}
+                />
+              </Box>
+            </Box>
+          </Container>
+          <FeatureSection />
+        </div>
+      }
+    />
   );
 };
 

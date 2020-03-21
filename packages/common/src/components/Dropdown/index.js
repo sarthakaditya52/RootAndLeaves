@@ -56,7 +56,7 @@ const DropdownMenu = props => {
           {dropdownItems &&
             dropdownItems.map((item, index) => (
               <DropdownMenuItemWrapper key={index} onClick={handleToggle}>
-                <Link to={item.path}>{item.label}</Link>
+                <span to={item.path}>{item.label}</span>
               </DropdownMenuItemWrapper>
             ))}
         </DropdownMenuItemsWrapper>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Layout from './Layout';
 import Container from 'common/src/components/UI/Container';
 import Box from 'reusecore/src/elements/Box';
 import FeatureBlock from 'common/src/components/FeatureBlock';
@@ -21,25 +22,29 @@ let DivS = {
 
 const About = ({ title, description, image, sectionSubTitle, imageArea }) => {
   return (
-    <div style={DivS}>
-      <Container>
-        <Box>
-          <center>
-            <FeatureBlock description={<Heading {...sectionSubTitle} />} />
-            <hr style={linestyle} />
-            <FeatureBlock title={<Heading {...title} />} />
+    <Layout
+      content={
+        <div style={DivS}>
+          <Container>
             <Box>
-              <FeatureBlock description={<Text {...description} />} />
+              <center>
+                <FeatureBlock description={<Heading {...sectionSubTitle} />} />
+                <hr style={linestyle} />
+                <FeatureBlock title={<Heading {...title} />} />
+                <Box>
+                  <FeatureBlock description={<Text {...description} />} />
+                </Box>
+                <Box {...imageArea}>
+                  <Image src={Dia} alt="diamond" {...image} />
+                </Box>
+              </center>
+              <OurValues />
+              <Team />
             </Box>
-            <Box {...imageArea}>
-              <Image src={Dia} alt="diamond" {...image} />
-            </Box>
-          </center>
-          <OurValues />
-          <Team />
-        </Box>
-      </Container>
-    </div>
+          </Container>
+        </div>
+      }
+    />
   );
 };
 

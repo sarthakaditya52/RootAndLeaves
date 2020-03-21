@@ -5,11 +5,11 @@ import Box from 'reusecore/src/elements/Box';
 import Text from 'reusecore/src/elements/Text';
 import Heading from 'reusecore/src/elements/Heading';
 import Button from 'reusecore/src/elements/Button';
-import Card from 'reusecore/src/elements/Card';
+//import Card from 'reusecore/src/elements/Card';
 import Image from 'reusecore/src/elements/Image';
 import Input from 'reusecore/src/elements/Input';
 import FeatureBlock from '../../../components/FeatureBlock';
-import ParticlesComponent from '../particles';
+// import ParticlesComponent from '../particles';
 import Container from '../../../components/UI/Container';
 import { email } from 'react-icons-kit/ionicons/email';
 import { Icon } from 'react-icons-kit';
@@ -25,7 +25,7 @@ import {
 } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.cjs.css';
 
-import BannerWrapper, {
+import {
   DiscountWrapper,
   DiscountLabel,
   ButtonWrapper,
@@ -55,7 +55,7 @@ const DomainSection = ({
 }) => {
   return (
     <Box {...SectionWrapper}>
-      <ParticlesComponent />
+      {/* <ParticlesComponent /> */}
       <BannerSquareShape />
       <BannerCircleShape />
       <Container>

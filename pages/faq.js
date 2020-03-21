@@ -1,4 +1,5 @@
 import React from 'react';
+import Layout from './Layout';
 import Sticky from 'react-stickynode';
 import classnames from 'classnames';
 
@@ -250,111 +251,115 @@ class FAQ extends React.Component {
   };
   render() {
     return (
-      <div style={mains}>
-        <div className="back" style={styles}>
-          <link
-            rel="stylesheet"
-            href="//dxssrr2j0sq4w.cloudfront.net/3.2.0/css/style-dca3ea452c.css"
-          />
-          <div>
-            <h1 className="Cta-title Cta-title--xl" style={Stylez}>
-              Frequently Asked Questions
-            </h1>
-          </div>
-          <div>
-            <div className="Container Container--lg Container--pad-md">
-              <div className="Grid Grid--gutter-sm">
-                <div className="Grid-cell--xs-12 Grid-cell--lg-4">
-                  <nav className="Faq-nav js-highlight-nav" style={navstyl}>
-                    <Sticky top={80}>
-                      <ul className="Faq-nav-items js-highlight-nav-items">
-                        <li
-                          className={classnames('Faq-nav-item ', {
-                            'Faq-nav-item is-active': this.state.Q1,
-                          })}
-                          style={Faq_nav_item}
-                        >
-                          <a
-                            className="Faq-nav-link js-highlight-nav-link"
-                            onClick={this.funcdisp1}
-                            style={curstyle}
-                          >
-                            <div className="Grid Grid--gutter-xs">
-                              <div className="Grid-cell--xs-2" />
-                              <div className="Grid-cell--xs-10">
-                                <i className="flaticon-annonymous" />
-                                <div className="Faq-nav-title">
-                                  General inquiries
+      <Layout
+        content={
+          <div style={mains}>
+            <div className="back" style={styles}>
+              <link
+                rel="stylesheet"
+                href="//dxssrr2j0sq4w.cloudfront.net/3.2.0/css/style-dca3ea452c.css"
+              />
+              <div>
+                <h1 className="Cta-title Cta-title--xl" style={Stylez}>
+                  Frequently Asked Questions
+                </h1>
+              </div>
+              <div>
+                <div className="Container Container--lg Container--pad-md">
+                  <div className="Grid Grid--gutter-sm">
+                    <div className="Grid-cell--xs-12 Grid-cell--lg-4">
+                      <nav className="Faq-nav js-highlight-nav" style={navstyl}>
+                        <Sticky top={80}>
+                          <ul className="Faq-nav-items js-highlight-nav-items">
+                            <li
+                              className={classnames('Faq-nav-item ', {
+                                'Faq-nav-item is-active': this.state.Q1,
+                              })}
+                              style={Faq_nav_item}
+                            >
+                              <a
+                                className="Faq-nav-link js-highlight-nav-link"
+                                onClick={this.funcdisp1}
+                                style={curstyle}
+                              >
+                                <div className="Grid Grid--gutter-xs">
+                                  <div className="Grid-cell--xs-2" />
+                                  <div className="Grid-cell--xs-10">
+                                    <i className="flaticon-annonymous" />
+                                    <div className="Faq-nav-title">
+                                      General inquiries
+                                    </div>
+                                    <div className="Faq-nav-description">
+                                      New around here? Start with the basics.
+                                    </div>
+                                  </div>
                                 </div>
-                                <div className="Faq-nav-description">
-                                  New around here? Start with the basics.
+                              </a>
+                            </li>
+                            <li
+                              className={classnames('Faq-nav-item ', {
+                                'Faq-nav-item is-active': this.state.Q2,
+                              })}
+                              style={Faq_nav_item}
+                            >
+                              <a
+                                className="Faq-nav-link js-highlight-nav-link"
+                                onClick={this.funcdisp2}
+                                style={curstyle}
+                              >
+                                <div className="Grid Grid--gutter-xs">
+                                  <div className="Grid-cell--xs-2" />
+                                  <div className="Grid-cell--xs-10">
+                                    <i className="flaticon-annonymous" />
+                                    <div className="Faq-nav-title">
+                                      General inquiries
+                                    </div>
+                                    <div className="Faq-nav-description">
+                                      New around here? Start with the basics.
+                                    </div>
+                                  </div>
                                 </div>
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                        <li
-                          className={classnames('Faq-nav-item ', {
-                            'Faq-nav-item is-active': this.state.Q2,
-                          })}
-                          style={Faq_nav_item}
-                        >
-                          <a
-                            className="Faq-nav-link js-highlight-nav-link"
-                            onClick={this.funcdisp2}
-                            style={curstyle}
-                          >
-                            <div className="Grid Grid--gutter-xs">
-                              <div className="Grid-cell--xs-2" />
-                              <div className="Grid-cell--xs-10">
-                                <i className="flaticon-annonymous" />
-                                <div className="Faq-nav-title">
-                                  General inquiries
+                              </a>
+                            </li>
+                            <li
+                              className={classnames('Faq-nav-item  ', {
+                                'Faq-nav-item is-active': this.state.Q3,
+                              })}
+                              style={Faq_nav_item}
+                            >
+                              <a
+                                className="Faq-nav-link js-highlight-nav-link"
+                                onClick={this.funcdisp3}
+                                style={curstyle}
+                              >
+                                <div className="Grid Grid--gutter-xs">
+                                  <div className="Grid-cell--xs-2" />
+                                  <div className="Grid-cell--xs-10">
+                                    <i className="flaticon-annonymous" />
+                                    <div className="Faq-nav-title">
+                                      General inquiries
+                                    </div>
+                                    <div className="Faq-nav-description">
+                                      New around here? Start with the basics.
+                                    </div>
+                                  </div>
                                 </div>
-                                <div className="Faq-nav-description">
-                                  New around here? Start with the basics.
-                                </div>
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                        <li
-                          className={classnames('Faq-nav-item  ', {
-                            'Faq-nav-item is-active': this.state.Q3,
-                          })}
-                          style={Faq_nav_item}
-                        >
-                          <a
-                            className="Faq-nav-link js-highlight-nav-link"
-                            onClick={this.funcdisp3}
-                            style={curstyle}
-                          >
-                            <div className="Grid Grid--gutter-xs">
-                              <div className="Grid-cell--xs-2" />
-                              <div className="Grid-cell--xs-10">
-                                <i className="flaticon-annonymous" />
-                                <div className="Faq-nav-title">
-                                  General inquiries
-                                </div>
-                                <div className="Faq-nav-description">
-                                  New around here? Start with the basics.
-                                </div>
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                      </ul>
-                    </Sticky>
-                  </nav>
-                </div>
-                <div className="Grid-cell--xs-12 Grid-cell--lg-8">
-                  {this.state.disp}
+                              </a>
+                            </li>
+                          </ul>
+                        </Sticky>
+                      </nav>
+                    </div>
+                    <div className="Grid-cell--xs-12 Grid-cell--lg-8">
+                      {this.state.disp}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        }
+      />
     );
   }
 }

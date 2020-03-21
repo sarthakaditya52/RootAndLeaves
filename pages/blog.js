@@ -1,4 +1,5 @@
 import React from 'react';
+import Layout from './Layout';
 import PropTypes from 'prop-types';
 import Container from 'common/src/components/UI/Container';
 import Box from 'reusecore/src/elements/Box';
@@ -22,38 +23,42 @@ const Blog = ({
   imageArea,
 }) => {
   return (
-    <Container>
-      <Box>
-        <FeatureBlock
-          title={<Heading {...title} />}
-          description={<Text {...sectionSubTitle} />}
-        />
-      </Box>
-      <Box>
-        <FeatureBlock description={<Text {...description} />} />
-      </Box>
-      <Box {...row}>
-        <Box {...col} {...imageArea}>
-          <Image
-            src="https://assets-global.website-files.com/56e9debf633486e330198479/57b6723c0c7bdb62381c5e86_top-10-travel-bloggers-you-should-be-follow-danflyingsolo-danielclarke-lonelyplanet-skyscanner.jpg"
-            alt="img"
-            {...image}
-          />
-        </Box>
-        <Box {...col}>
-          <hr style={linestyle} />
-          <FeatureBlock description={<Text content="image details" />} />
-        </Box>
-      </Box>
-      <center>
-        <Box>
-          <FeatureBlock description={<Text {...description} />} />
-        </Box>
-        <Box>
-          <FeatureBlock description={<Text {...description} />} />
-        </Box>
-      </center>
-    </Container>
+    <Layout
+      content={
+        <Container>
+          <Box>
+            <FeatureBlock
+              title={<Heading {...title} />}
+              description={<Text {...sectionSubTitle} />}
+            />
+          </Box>
+          <Box>
+            <FeatureBlock description={<Text {...description} />} />
+          </Box>
+          <Box {...row}>
+            <Box {...col} {...imageArea}>
+              <Image
+                src="https://assets-global.website-files.com/56e9debf633486e330198479/57b6723c0c7bdb62381c5e86_top-10-travel-bloggers-you-should-be-follow-danflyingsolo-danielclarke-lonelyplanet-skyscanner.jpg"
+                alt="img"
+                {...image}
+              />
+            </Box>
+            <Box {...col}>
+              <hr style={linestyle} />
+              <FeatureBlock description={<Text content="image details" />} />
+            </Box>
+          </Box>
+          <center>
+            <Box>
+              <FeatureBlock description={<Text {...description} />} />
+            </Box>
+            <Box>
+              <FeatureBlock description={<Text {...description} />} />
+            </Box>
+          </center>
+        </Container>
+      }
+    />
   );
 };
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import Layout from './Layout';
 import Box from 'reusecore/src/elements/Box';
 import Container from 'common/src/components/UI/Container';
 import Text from 'reusecore/src/elements/Text';
@@ -39,78 +40,82 @@ const Contact = ({
   sectionSubTitle,
 }) => {
   return (
-    <div style={styleD}>
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-      />
-      <Container>
-        <Box {...row}>
-          <Box {...col}>
-            <FeatureBlock
-              title={<Heading {...title} />}
-              description={<Text {...description} />}
-            />
+    <Layout
+      content={
+        <div style={styleD}>
+          <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          />
+          <Container>
             <Box {...row}>
-              <i className="fa fa-map-marker fa-fw" style={istyle} />
-              Address Goes Here
+              <Box {...col}>
+                <FeatureBlock
+                  title={<Heading {...title} />}
+                  description={<Text {...description} />}
+                />
+                <Box {...row}>
+                  <i className="fa fa-map-marker fa-fw" style={istyle} />
+                  Address Goes Here
+                </Box>
+                <Box {...row}>
+                  <i className="fa fa-phone fa-fw" style={istyle} /> Phone No.
+                  Goes Here
+                </Box>
+              </Box>
+              <Box {...col}>
+                <FeatureBlock title={<Heading {...sectionSubTitle} />} />
+                <form style={FormIinline}>
+                  <div style={wrapInput2}>
+                    <input
+                      type="text"
+                      name="name"
+                      style={input2}
+                      placeholder="Name 1"
+                    />
+                  </div>
+
+                  <div style={wrapInput2}>
+                    <input
+                      type="text"
+                      name="email"
+                      style={input2}
+                      placeholder="Name 2"
+                    />
+                  </div>
+
+                  <div style={wrapInput2}>
+                    <input
+                      type="text"
+                      name="name"
+                      style={input2}
+                      placeholder="Name 3"
+                    />
+                  </div>
+
+                  <div style={wrapInput2}>
+                    <input
+                      type="text"
+                      name="email"
+                      style={input2}
+                      placeholder="Name 4"
+                    />
+                  </div>
+                  <div style={istyle2}>
+                    <textarea
+                      name="message"
+                      style={istyle3}
+                      placeholder="Message"
+                    />
+                  </div>
+                  <button style={Button}>Send Your Message</button>
+                </form>
+              </Box>
             </Box>
-            <Box {...row}>
-              <i className="fa fa-phone fa-fw" style={istyle} /> Phone No. Goes
-              Here
-            </Box>
-          </Box>
-          <Box {...col}>
-            <FeatureBlock title={<Heading {...sectionSubTitle} />} />
-            <form style={FormIinline}>
-              <div style={wrapInput2}>
-                <input
-                  type="text"
-                  name="name"
-                  style={input2}
-                  placeholder="Name 1"
-                />
-              </div>
-
-              <div style={wrapInput2}>
-                <input
-                  type="text"
-                  name="email"
-                  style={input2}
-                  placeholder="Name 2"
-                />
-              </div>
-
-              <div style={wrapInput2}>
-                <input
-                  type="text"
-                  name="name"
-                  style={input2}
-                  placeholder="Name 3"
-                />
-              </div>
-
-              <div style={wrapInput2}>
-                <input
-                  type="text"
-                  name="email"
-                  style={input2}
-                  placeholder="Name 4"
-                />
-              </div>
-              <div style={istyle2}>
-                <textarea
-                  name="message"
-                  style={istyle3}
-                  placeholder="Message"
-                />
-              </div>
-              <button style={Button}>Send Your Message</button>
-            </form>
-          </Box>
-        </Box>
-      </Container>
-    </div>
+          </Container>
+        </div>
+      }
+    />
   );
 };
 

@@ -2,7 +2,7 @@ const data = {
   menuItems: [
     {
       label: 'Home',
-      path: '/',
+      path: '/home',
     },
     {
       label: 'Products',
